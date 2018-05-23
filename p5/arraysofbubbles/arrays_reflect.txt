@@ -1,0 +1,20 @@
+Lexy Van de Kieft
+Ms. Tanzosh
+Computer Science-Period 4
+
+    Working on arrays was actually a very simple process, which I did not expect it to be. In computer science I have found that
+usually the program that requires less actual code requires much more logic. There tends to be a shorter, more intellectual method
+and a longer but more straightforward and repetitive code. Using arrays to create bubbles was actually very easy and so much more
+efficient than using objects, which I had done in the Bubbles Mini Challenge. With objects, I had to write about 5 lines of code for
+each bubble giving the specification. Hence, trying to create 100 would be very tedious. The use of arrays was very advantageous because
+it only required about 15 lines of code total, and the number of bubbles produced (along with any other property) can be changed in
+a few seconds.
+    The algorithm I used for bubbles consisted of the usual setup and draw functions. Inside of the setup function I had a for loop.
+Each bubble created had a random x and y value and color within the limits I set. I set the size of the bubbles as a variable at the
+beginning of the code, so all of the bubbles were the same size. In the draw function I created another for loop which gave each bubble
+its ellipse shape, filled in color property and the ability to move a certain amount to create a jiggling effect.
+    One struggle I faced while working on the program involved actually running the program. I was confident in the code, but when I
+went to see the result, my code kept popping up instead of the canvas. After trying lots of different techniques, I tried to look at
+what was different between my original sketch.js file (which was working) and this one. After playing around a little bit more I realized
+that the index.html file was accessing the old source and not the new one. After changing the source, my program worked!
+    Overall, I really enjoyed working on Arrays of Bubbles, and it really helped me to get more acclimated with using P5.

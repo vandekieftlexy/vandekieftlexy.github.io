@@ -1,0 +1,14 @@
+Lexy Van de Kieft
+Ms. Tanzosh
+Computer Science-Period 4
+
+    Working with P5 was a very valuable experience which introduced me to an important new concept. The Bubbles Mini Challenge mainly
+involved JavaScript objects, which is when information is stored in one variable. These objects can then have individual properties.
+One advantage of learning how to use objects is that almost any data can be stored within them. Therefore, understanding how to use
+them will give me many more capabilities as a JavaScript user. I'm starting to see how JavaScript could be used to create
+different kinds of games or applications. Initially, I found the different functions to be tricky. The sizes of the bubbles go in the
+setup function, while the other information (such as the ellipse part which gives the bubble it circular shape) goes in the draw function.
+In the future I feel that I may have trouble remembering which aspects of the program belong in which function, but I am sure that
+with practice it will become easier to remember.
+    Overall, I really enjoyed my first encounter with P5! I look forward to becoming more adept with using it and seeing what else
+I can create!

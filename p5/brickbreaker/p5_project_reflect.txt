@@ -1,0 +1,27 @@
+Lexy Van de Kieft
+Ms. Tanzosh
+Computer Science-Period 4
+
+    Working on another pair programming project was a fun experience! In order to make sure we were equally participating in the
+project, we split up the time in which we were typing and observing. We definitely relied on one another when we were figuring out
+more complex parts of the code, and as we found with the last project, having two minds working on the project helped us to determine
+what methods would and would not work.
+    When we would reach a point where our code wasn't working, we first went back to the code and made sure that we had not made any
+simple syntax errors. A few times we needed to reference the p5 website because we were not completely sure that we were using
+functions the right way or placing them in the right section of our code. Other times, we faced more complex issues. One problem we
+had was figuring out how to get the ball to move appropriately. Originally, we just created the ball in the draw section and gave it
+a set velocity. However, we quickly realized that this method would not work. The ball's velocity changes very frequently because when
+it hits the wall or paddle its x and y velocity reverse. Additionally, when the ball hits the brick, its velocity must become zero.
+Therefore, we decided that we would make the ball an object. By doing this we could change its velocity values much more easily. We
+faced a similar issue with the brick. In order to create the illusion that the brick disappears after the ball hits it, we decided to
+change the color of the brick to match the background once hit by the ball. However, we also had made the brick in the draw section
+with a defined color. After our issue with the ball, we realized that we needed to make the same fix. We then set the brick as an
+object with a color that we could change. These two changes in our approach were big turning points, as they were crucial to ensuring
+that the game worked properly.
+     The final step of our code was what turned out to be our most complex algorithm. Our final if statement consisted of four
+different conditions which were used to determine the location of the ball. If the ball had an x-position between 250 and 300 and a
+y-position between 150 and 200, that meant that it was touching the brick. If all of these statements were true, the brick color would
+change to match the background, and the ball's x and y velocities would equal 0 (so the ball would stop). Finally, text would display,
+telling the player "You win!".
+    Overall, I really enjoyed working on this project, and it was cool to learn the steps behind a game that I enjoy playing.
+
