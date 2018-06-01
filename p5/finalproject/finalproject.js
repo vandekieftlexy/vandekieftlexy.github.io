@@ -1,17 +1,25 @@
 let ball;
-var ballX = 100;
+var ballX = 325;
 var ballY = 250;
 var bricks = [];
 var score = 0;
+var timesplayed = 0;
 
 function setup() {
     createCanvas(650,500);
 
     ball = {
-        xvelocity: random(-5, -4),
-        yvelocity: random(-5, -4),
+        //xvelocity: random(-5, -4),
+        //yvelocity: random(-5, -4),
+        xvelocity: 0,
+        yvelocity: 0
     };
+    bricksinit();
+   textFont('Georgia');
+}
 
+function bricksinit() {
+    bricks=[];
     for (let i = 0; i < 10; i++) {
         brick = {
             color: ('#901f32'),
@@ -20,12 +28,15 @@ function setup() {
         };
    bricks.push(brick);
    }
-
-   textFont('Georgia');
 }
 
 function draw() {
     background('#7bccc2');
+
+    //if (keyIsPressed === true) {
+       // ball.xvelocity = random(-5, -4),
+        //ball.yvelocity = random(-5, -4),
+   // }
 
     //paddle
     fill('#00122E');
@@ -48,6 +59,11 @@ function draw() {
         //text('You Win!', 175, 100);
         //textSize(50);
     }
+        //if (ball.xvelocity == 0 && score == 0) {
+        if (timesplayed == 0) {
+            text('Press the Space Bar to Start', 100, 200);
+            start();
+        }
     }
 
     //rect(250, 150, 50, 50);
@@ -63,9 +79,11 @@ function draw() {
     textSize(32);
 
     if (score == 6) {
-       text('You Win!', 250, 200);
+       text('You Win! Press Space Bar to Play Again!', 32, 200);
        ball.xvelocity = 0;
        ball.yvelocity = 0;
+       start();
+       //bricksinit();
     }
 
     //paddle movement
@@ -84,8 +102,24 @@ function draw() {
     }
 
     if (ballY >= 600) {
-        text('Game Over!', 250, 200);
         textSize(32);
+        text('Game Over! Press Space Bar to Try Again!', 30, 200);
+        ball.xvelocity = 0;
+        ball.yvelocity = 0;
+        start();
+        //bricksinit();
+}
+  function start() {
+    if (keyIsPressed === true){
+        if (keyCode === 32) {
+            ballX = width/2;
+            ballY = height/2;
+            score = 0;
+            ball.xvelocity = random(-5, -4),
+            ball.yvelocity = random(-5, -4),
+            timesplayed = timesplayed + 1;
+            bricksinit();
+        }
+        }
     }
-
 }
